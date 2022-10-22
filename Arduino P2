@@ -1,0 +1,22 @@
+Arduino with Tricolor LED
+
+//Blink Tricolor LED with pushbutton
+
+void setup() {
+  pinMode(1,OUTPUT);
+  pinMode(2,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(4,INPUT);
+}
+void loop() {
+  if(digitalRead(4)== HIGH) {
+    for(int i=1;i<4;i++) {
+    digitalWrite(i,HIGH);
+    delay(200);
+    digitalWrite(i,LOW);
+    delay(200);
+    }
+  
+  }
+}
+
