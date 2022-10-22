@@ -1,0 +1,20 @@
+Arduino First Program
+
+//To Blink a LED in pin 13
+
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(13,OUTPUT);
+}
+int a=500;
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(13,HIGH);
+delay(a);
+digitalWrite(13,LOW);
+delay(a);
+}
+
+
+
